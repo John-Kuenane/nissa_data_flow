@@ -25,15 +25,12 @@ import {
 } from "lucide-react";
 
 // 🧩 Fallback Card component — paste this right here
-//const Card = ({ className = "", children }: any) =>
 const Card = ({ className = "", children }: { className?: string; children: React.ReactNode }) =>
   <div className={`rounded-2xl shadow-lg border-0 ${className}`}>{children}</div>;
 
-//const CardHeader = ({ className = "", children }: any) =>
 const CardHeader = ({ className = "", children }: { className?: string; children: React.ReactNode }) =>
   <div className={`p-5 text-xl font-semibold ${className}`}>{children}</div>;
 
-//const CardContent = ({ className = "", children }: any) =>
 const CardContent = ({ className = "", children }: { className?: string; children: React.ReactNode }) =>
   <div className={`px-5 pb-5 text-base leading-relaxed ${className}`}>{children}</div>;
 
